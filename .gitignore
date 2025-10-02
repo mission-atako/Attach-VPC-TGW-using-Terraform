@@ -1,0 +1,22 @@
+@'
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Sensitive vars
+terraform.tfvars
+*.tfvars
+*.tfvars.json
+
+# Editors
+.vscode/
+.idea/
+'@ | Out-File -Encoding utf8 .gitignore
