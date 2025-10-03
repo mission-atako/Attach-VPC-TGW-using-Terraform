@@ -1,4 +1,5 @@
 module "key" {
+    
     source = "../../../modules/transit-gateway-attachment"
     region = var.region
     name   = var.name
