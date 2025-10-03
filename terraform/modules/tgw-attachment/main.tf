@@ -1,17 +1,3 @@
-terraform {
-  required_version = ">= 1.3.0"
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = ">= 5.0"
-    }
-  }
-}
-
-provider "aws" {
-  region = var.region
-}
-
 # Attach your VPC to the Transit Gateway
 resource "aws_ec2_transit_gateway_vpc_attachment" "this" {
   vpc_id             = var.vpc_id
