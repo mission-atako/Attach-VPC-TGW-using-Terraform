@@ -1,4 +1,4 @@
-module "key" {
+module "tgw_attach" {
 
     source = "../../../modules/tgw-attachment"
     region = var.region
