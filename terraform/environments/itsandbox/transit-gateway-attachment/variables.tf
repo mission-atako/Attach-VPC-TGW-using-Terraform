@@ -40,7 +40,7 @@ variable "associate_with_default_tgw_rt" {
 variable "propagate_to_default_tgw_rt" {
   description = "Propagate routes from this attachment to the TGW's default route table"
   type        = bool
-  default     = true
+  default     = true 
 }
 
 # Optional: add VPC routes to send traffic to TGW

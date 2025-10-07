@@ -10,8 +10,8 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "this" {
   dns_support                         = "enable"
   ipv6_support                        = "disable"
   appliance_mode_support              = "disable"
-  transit_gateway_default_route_table_association = var.associate_with_default_tgw_rt ? "enable" : "disable"
-  transit_gateway_default_route_table_propagation = var.propagate_to_default_tgw_rt ? "enable" : "disable"
+  transit_gateway_default_route_table_association = var.associate_with_default_tgw_rt 
+  transit_gateway_default_route_table_propagation = var.propagate_to_default_tgw_rt 
 
   tags = merge(
     {
